@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/button_new"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/create" />
+
+        <ImageButton
+            android:id="@+id/button_open"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/open" />
+
+        <ImageButton
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/save" />
+
+        <ImageButton
+            android:id="@+id/button_save_as"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/saveas" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center_horizontal"
+            android:text="@string/menu_new" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
+            android:gravity="center_horizontal"
+            android:text="@string/menu_open" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/menu_save" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/menu_save_as" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/file_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="file_path" >
+    </EditText>
+
+    <view
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/EditTextOpenFile"
+        android:layout_width="fill_parent"
+        android:layout_height="310dp"
+        class="com.tplink.android.LinedEditText"
+        android:focusableInTouchMode="true"
+        android:freezesText="true"
+        android:gravity="top|left"
+        android:linksClickable="true"
+        android:singleLine="false" >
+    </view>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/new_filePath"
+            android:layout_width="140dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3" >
+        </EditText>
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="确定" >
+        </Button>
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="取消" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

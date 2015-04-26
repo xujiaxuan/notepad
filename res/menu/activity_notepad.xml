@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_settings"
+        android:title="@string/menu_settings"
+        android:orderInCategory="100" />
+    <item android:id="@+id/menu_new"
+    	android:title="@string/menu_new" 
+    	android:icon="@drawable/create"
+    	/>
+    <item android:id="@+id/menu_open"
+    	android:title="@string/menu_open" 
+    	android:icon="@drawable/open"
+    	/>
+    <item android:id="@+id/menu_jump"
+    	android:title="@string/menu_jump" 
+    	android:icon="@drawable/jump"
+    	/>
+    <item android:id="@+id/menu_save"
+    	android:title="@string/menu_save" 
+    	android:icon="@drawable/save"
+    	/>
+    <item android:id="@+id/menu_save_as"
+    	android:title="@string/menu_save_as" 
+    	android:icon="@drawable/saveas"
+    	/>
+    <item android:id="@+id/menu_more"
+    	android:title="@string/menu_more"    	
+    	/>
+</menu>
